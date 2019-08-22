@@ -4,6 +4,7 @@ import 'ChatPage.dart';
 class ChatPageList extends StatefulWidget {
   @override
   _ChatPageListState createState() => _ChatPageListState();
+  const ChatPageList();
 }
 
 class _ChatPageListState extends State<ChatPageList> {
