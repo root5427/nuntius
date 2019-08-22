@@ -6,6 +6,7 @@ import 'package:nuntius/widgets/InputWidget.dart';
 class ChatPage extends StatefulWidget {
   @override
   _ChatPageState createState() => _ChatPageState();
+  const ChatPage();
 }
 
 class _ChatPageState extends State<ChatPage> {
