@@ -13,7 +13,7 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
         decoration: new BoxDecoration(boxShadow: [
           new BoxShadow(
             color: Colors.black,
-            blurRadius: 5.0,
+            blurRadius: 2.0,
             spreadRadius: 0.1,
           ),
         ]),
@@ -104,7 +104,7 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
                   child: Container(
                     child: Center(
                       child: CircleAvatar(
-                        radius: 30.0,
+                        radius: 32.0,
                         backgroundImage: AssetImage(Assets.user),
                         backgroundColor: Colors.green,
                       ),
