@@ -15,6 +15,5 @@ void main() {
     await tester.pumpWidget(app);
     expect(find.byType(ChatAppBar), findsOneWidget);
     expect(find.byType(ChatListWidget), findsOneWidget);
-    expect(find.byType(InputWidget), findsOneWidget);
   });
 }
