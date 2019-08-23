@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import '../config/Assets.dart';
 import '../config/Palette.dart';
+import '../config/Styles.dart';
 
 class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
   final double height = 100.0;
   const ChatAppBar();
   @override
   Widget build(BuildContext context) {
-    var textHeading = TextStyle(color: Palette.primaryTextColor, fontSize: 20);
-    var textStyle = TextStyle(color: Palette.secondaryTextColor);
-
-    // double width = MediaQuery.of(context).size.width;
     return Material(
       child: Container(
         decoration: new BoxDecoration(boxShadow: [
@@ -58,8 +55,9 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
                                       mainAxisSize: MainAxisSize.min,
                                       children: <Widget>[
                                         Text("Devix Rootix",
-                                            style: textHeading),
-                                        Text("@devixrootix", style: textStyle),
+                                            style: Styles.textHeading),
+                                        Text("@devixrootix",
+                                            style: Styles.text),
                                       ],
                                     ),
                                   ),
@@ -78,7 +76,7 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
                               children: <Widget>[
                                 Text(
                                   "Photos",
-                                  style: textStyle,
+                                  style: Styles.text,
                                 ),
                                 VerticalDivider(
                                   width: 30.0,
@@ -86,13 +84,13 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
                                 ),
                                 Text(
                                   "Viedos",
-                                  style: textStyle,
+                                  style: Styles.text,
                                 ),
                                 VerticalDivider(
                                   width: 30.0,
                                   color: Palette.primaryTextColor,
                                 ),
-                                Text("Files", style: textStyle),
+                                Text("Files", style: Styles.text),
                               ],
                             ),
                           ),
