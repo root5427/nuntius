@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nuntius/widgets/ChatAppBar.dart';
 import 'package:nuntius/widgets/ChatListWidget.dart';
-import 'package:nuntius/widgets/InputWidget.dart';
 
 class ChatPage extends StatefulWidget {
   @override
@@ -20,7 +19,6 @@ class _ChatPageState extends State<ChatPage> {
             Column(
               children: <Widget>[
                 ChatListWidget(),
-                InputWidget(),
               ],
             ),
           ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nuntius/config/Styles.dart';
 import 'package:nuntius/config/Palette.dart';
 import 'package:intl/intl.dart';
 
@@ -32,13 +33,10 @@ class ChatItemWidget extends StatelessWidget {
               children: <Widget>[
                 Container(
                   child: Text(
-                      DateFormat('dd MM kk:mm').format(
-                          DateTime.fromMillisecondsSinceEpoch(1565888474278)),
-                      style: TextStyle(
-                        color: Palette.greyColor,
-                        fontSize: 12.0,
-                        fontStyle: FontStyle.normal,
-                      )),
+                    DateFormat('dd MM kk:mm').format(
+                        DateTime.fromMillisecondsSinceEpoch(1565888474278)),
+                    style: Styles.date,
+                  ),
                   margin: EdgeInsets.only(left: 5.0, top: 0.5, bottom: 0.5),
                 ),
               ],
@@ -67,13 +65,10 @@ class ChatItemWidget extends StatelessWidget {
             ),
             Container(
               child: Text(
-                  DateFormat('dd MM kk:mm').format(
-                      DateTime.fromMillisecondsSinceEpoch(1565888474278)),
-                  style: TextStyle(
-                    color: Palette.greyColor,
-                    fontSize: 12.0,
-                    fontStyle: FontStyle.normal,
-                  )),
+                DateFormat('dd MM kk:mm')
+                    .format(DateTime.fromMillisecondsSinceEpoch(1565888474278)),
+                style: Styles.date,
+              ),
               margin: EdgeInsets.only(left: 5.0, top: 0.5, bottom: 0.5),
             ),
           ],
