@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nuntius/config/Palette.dart';
 
+// ignore: must_be_immutable
 class CircleIndicator extends StatefulWidget {
   bool isActive;
   CircleIndicator(this.isActive);
