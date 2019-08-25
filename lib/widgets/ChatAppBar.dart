@@ -10,8 +10,8 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
-        decoration: new BoxDecoration(boxShadow: [
-          new BoxShadow(
+        decoration: BoxDecoration(boxShadow: [
+          BoxShadow(
             color: Colors.black,
             blurRadius: 2.0,
             spreadRadius: 0.1,
